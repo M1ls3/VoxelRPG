@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
-  m_Name: FloorTile
+  m_Script: {fileID: 11500000, guid: c8846f8ddbf6a5f4f994807c4d5195c9, type: 3}
+  m_Name: SimpleRandomWalkParameters_Coredors
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 0}
-  m_DefaultGameObject: {fileID: 1292499956246047296, guid: ac3118da040d2474e86e9652f25d227b, type: 3}
-  m_DefaultColliderType: 1
-  m_TilingRules: []
+  iterations: 1
+  walkLength: 100
+  startRandomlyEachIteration: 1
