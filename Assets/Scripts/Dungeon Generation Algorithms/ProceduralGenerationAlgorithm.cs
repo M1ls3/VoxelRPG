@@ -19,6 +19,20 @@ public static class ProceduralGenerationAlgorithm
         }
         return path;
     }
+
+    public static List<Vector3Int> RandomWalkCorridor(Vector3Int startPosition, int corridorLength)
+    {
+        List<Vector3Int> corridor = new List<Vector3Int>();
+        var direction = Direction3D.GetRandomCardinalDirection();
+        var currentPosition = startPosition;
+        corridor.Add(currentPosition);
+        for (int i = 0; i < corridorLength; i++)
+        {
+            currentPosition += direction;
+            corridor.Add(currentPosition);
+        }
+        return corridor;
+    }
 }
 
 
