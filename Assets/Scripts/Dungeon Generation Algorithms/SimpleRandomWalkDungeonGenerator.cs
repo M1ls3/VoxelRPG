@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 public class SimpleRandomWalkDungeonGenerator : AbstractDunngeonGenerator
 {
 
-
     [SerializeField]
     protected SimpleRandomWalkData randomWalkParameters;
 
