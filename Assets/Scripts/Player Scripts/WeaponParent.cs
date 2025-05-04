@@ -25,21 +25,22 @@ public class WeaponParent : MonoBehaviour
     {
         if (IsAttacking)
             return;
-        Vector3 direction = (PointerPosition - (Vector3)transform.position).normalized;
-        transform.right = direction;
+        //Vector3 direction = (PointerPosition - (Vector3)transform.position).normalized;
+        //transform.right = direction;
 
-        Vector3 scale = transform.localScale;
-        if (direction.x < 0)
-        {
-            scale.y = -1;
-        }
-        else if (direction.x > 0)
-        {
-            scale.y = 1;
-        }
-        transform.localScale = scale;
+        //var rotation = transform.localRotation;
+        //Vector3 scale = transform.localScale;
+        //if (direction.x < 0)
+        //{
+        //    scale.z = -1;
+        //}
+        //else if (direction.x > 0)
+        //{
+        //    scale.z = 1;
+        //}
+        //transform.localScale = scale;
 
-        if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
+        if (transform.eulerAngles.y > 0 && transform.eulerAngles.y < 180)
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
         }

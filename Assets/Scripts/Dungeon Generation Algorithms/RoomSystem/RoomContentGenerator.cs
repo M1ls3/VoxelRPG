@@ -26,15 +26,15 @@ public class RoomContentGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ClearAllChildren();
-            foreach (var item in spawnedObjects)
-            {
-                Destroy(item);
-            }
-            RegenerateDungeon?.Invoke();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    ClearAllChildren();
+        //    foreach (var item in spawnedObjects)
+        //    {
+        //        Destroy(item);
+        //    }
+        //    RegenerateDungeon?.Invoke();
+        //}
     }
 
     public void GenerateRoomContent(DungeonData dungeonData)

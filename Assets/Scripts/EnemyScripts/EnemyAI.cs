@@ -53,6 +53,7 @@ public class EnemyAI : MonoBehaviour
         {
             //Looking at the Target
             OnPointerInput?.Invoke(aiData.currentTarget.position);
+            LookAtPlayer();
             if (following == false)
             {
                 following = true;
@@ -100,5 +101,23 @@ public class EnemyAI : MonoBehaviour
 
         }
 
+    }
+
+    private void LookAtPlayer()
+    {
+        if (aiData.currentTarget == null) return;
+
+        Vector3 directionToTarget = aiData.currentTarget.position - transform.position;
+        directionToTarget.y = 0; 
+
+        if (directionToTarget != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                targetRotation,
+                Time.deltaTime * 5f 
+            );
+        }
     }
 }
