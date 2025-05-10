@@ -52,8 +52,11 @@ MonoBehaviour:
     enemySize: {x: 1, y: 3, z: 1}
   itemData:
   - minQuantity: 1
-    maxQuantity: 2
+    maxQuantity: 3
     itemData: {fileID: 11400000, guid: 1ea4dc69e404624419328401918c93aa, type: 2}
   - minQuantity: 1
-    maxQuantity: 4
+    maxQuantity: 5
     itemData: {fileID: 11400000, guid: c6c814950d614b24d98f56159220c13b, type: 2}
+  - minQuantity: 1
+    maxQuantity: 5
+    itemData: {fileID: 11400000, guid: eb78f5d7c7388a3458d5e842f899cff6, type: 2}

@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public class RoomContentGenerator : MonoBehaviour
 {
     [SerializeField]
-    private RoomGenerator playerRoom, defaultRoom;
+    private RoomGenerator playerRoom, defaultRoom, portalRoom;
 
     List<GameObject> spawnedObjects = new List<GameObject>();
 
@@ -24,22 +24,8 @@ public class RoomContentGenerator : MonoBehaviour
 
     public UnityEvent RegenerateDungeon;
 
-    private void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    ClearAllChildren();
-        //    foreach (var item in spawnedObjects)
-        //    {
-        //        Destroy(item);
-        //    }
-        //    RegenerateDungeon?.Invoke();
-        //}
-    }
-
     public void GenerateRoomContent(DungeonData dungeonData)
     {
-        //ClearAllChildren();
 
         foreach (GameObject item in spawnedObjects)
         {
@@ -48,6 +34,7 @@ public class RoomContentGenerator : MonoBehaviour
         spawnedObjects.Clear();
 
         SelectPlayerSpawnPoint(dungeonData);
+        SelectDoorSpawnPoints(dungeonData);
         SelectEnemySpawnPoints(dungeonData);
 
         foreach (GameObject item in spawnedObjects)
@@ -59,8 +46,23 @@ public class RoomContentGenerator : MonoBehaviour
 
     private void SelectPlayerSpawnPoint(DungeonData dungeonData)
     {
+
+        // Проверка наличия комнат
+        if (dungeonData.roomsDictionary == null || dungeonData.roomsDictionary.Count == 0)
+        {
+            Debug.LogError("RoomsDictionary is empty or null!");
+            return;
+        }
+
         int randomRoomIndex = UnityEngine.Random.Range(0, dungeonData.roomsDictionary.Count);
         Vector3Int playerSpawnPoint = dungeonData.roomsDictionary.Keys.ElementAt(randomRoomIndex);
+
+        // Проверка валидности индекса
+        if (!dungeonData.roomsDictionary.ContainsKey(playerSpawnPoint))
+        {
+            Debug.LogError("Invalid spawn point selected!");
+            return;
+        }
 
         graphTest.RunDijkstraAlgorithm(playerSpawnPoint, dungeonData.floorPositions);
 
@@ -79,10 +81,49 @@ public class RoomContentGenerator : MonoBehaviour
         dungeonData.roomsDictionary.Remove(playerSpawnPoint);
     }
 
-    private void FocusCameraOnThePlayer(Transform playerTransform)
+    private void SelectDoorSpawnPoints(DungeonData dungeonData)
     {
-        cinemachineCamera.LookAt = playerTransform;
-        cinemachineCamera.Follow = playerTransform;
+        // 1. Проверяем наличие данных алгоритма Дейкстры
+        if (graphTest.DijkstraResult == null || graphTest.DijkstraResult.Count == 0)
+        {
+            Debug.LogError("Dijkstra data not available!");
+            return;
+        }
+
+        // 2. Находим комнату с максимальным расстоянием от игрока
+        var farthestRoom = dungeonData.roomsDictionary.Keys
+            .OrderByDescending(roomPos => graphTest.DijkstraResult.ContainsKey(roomPos) ?
+                graphTest.DijkstraResult[roomPos] : -1)
+            .FirstOrDefault();
+
+        // 3. Проверяем валидность найденной комнаты
+        if (!dungeonData.roomsDictionary.ContainsKey(farthestRoom))
+        {
+            Debug.LogError("Failed to find farthest room!");
+            return;
+        }
+
+        // 4. Генерируем содержимое комнаты с дверью
+        List<GameObject> doorRoomObjects = portalRoom.ProcessRoom(
+            farthestRoom,
+            dungeonData.roomsDictionary[farthestRoom],
+            dungeonData.GetRoomFloorWithoutCorridors(farthestRoom)
+        );
+
+        //// 5. Добавляем врагов и предметы как в обычных комнатах
+        //doorRoomObjects.AddRange(
+        //    defaultRoom.ProcessRoom(
+        //        farthestRoom,
+        //        dungeonData.roomsDictionary[farthestRoom],
+        //        dungeonData.GetRoomFloorWithoutCorridors(farthestRoom)
+        //    )
+        //);
+
+        // 6. Регистрируем созданные объекты
+        spawnedObjects.AddRange(doorRoomObjects);
+
+        // 7. Удаляем комнату из словаря для предотвращения повторной обработки
+        dungeonData.roomsDictionary.Remove(farthestRoom);
     }
 
     private void SelectEnemySpawnPoints(DungeonData dungeonData)
@@ -98,6 +139,12 @@ public class RoomContentGenerator : MonoBehaviour
             );
 
         }
+    }
+
+    private void FocusCameraOnThePlayer(Transform playerTransform)
+    {
+        cinemachineCamera.LookAt = playerTransform;
+        cinemachineCamera.Follow = playerTransform;
     }
 
     public void ClearAllChildren()

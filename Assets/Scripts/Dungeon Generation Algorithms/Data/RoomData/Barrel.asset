@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1740635595643236522, guid: d092a1929d602ad469ba816bd8bb4fab, type: 3}
   size: {x: 1, y: 1, z: 1}
-  placementType: 1
+  placementType: 0
   addOffset: 0
   health: 1
   nonDestructible: 0

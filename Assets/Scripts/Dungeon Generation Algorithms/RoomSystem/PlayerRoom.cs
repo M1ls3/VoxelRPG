@@ -58,3 +58,11 @@ public class EnemyPlacementData : PlacementData
     public GameObject enemyPrefab;
     public Vector3Int enemySize = Vector3Int.one;
 }
+
+
+[Serializable]
+public class DoorPlacementData : PlacementData
+{
+    public GameObject doorPrefab;
+    public Vector3Int doorSize = Vector3Int.one;
+}

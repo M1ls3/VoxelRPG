@@ -810,7 +810,7 @@ MonoBehaviour:
   detectionDelay: 0.05
   aiUpdateDelay: 0.06
   attackDelay: 1
-  attackDistance: 1.21
+  attackDistance: 1.5
   OnAttackPressed:
     m_PersistentCalls:
       m_Calls:
@@ -1329,7 +1329,7 @@ MonoBehaviour:
   animator: {fileID: 4633449275108059498}
   delay: 0.3
   sphereOrigin: {fileID: 5639479373187194612}
-  radius: 1.1
+  radius: 1.3
 --- !u!1 &8801773532132201481
 GameObject:
   m_ObjectHideFlags: 0

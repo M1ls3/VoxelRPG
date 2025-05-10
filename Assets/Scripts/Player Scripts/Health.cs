@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Health : MonoBehaviour
 {
@@ -12,6 +16,9 @@ public class Health : MonoBehaviour
 
     [SerializeField]
     private bool isDead = false;
+
+    public int CurrentHealth { get { return currentHealth; } }
+    public int MaxHealth { get { return maxHealth; } }
 
     public void InitializeHealth(int healthValue)
     {
@@ -37,7 +44,20 @@ public class Health : MonoBehaviour
         {
             OnDeathWithReference?.Invoke(sender);
             isDead = true;
-            Destroy(gameObject);
+            Debug.Log(transform.name);
+            //Destroy(gameObject);
+            if (Regex.IsMatch(transform.name, "Player"))
+                Debug.Log("Player is dead!!!");
+            else Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (Regex.IsMatch(transform.name, "Player"))
+        {
+            PlayerStats.Instance.Initialize(maxHealth, maxHealth);
+            PlayerStats.Instance.onHealthChangedCallback?.Invoke();
         }
     }
 }
