@@ -16,7 +16,6 @@ public class RoomContentGenerator : MonoBehaviour
     [SerializeField]
     private GraphTest graphTest;
 
-
     public Transform itemParent;
 
     [SerializeField]
@@ -47,7 +46,6 @@ public class RoomContentGenerator : MonoBehaviour
     private void SelectPlayerSpawnPoint(DungeonData dungeonData)
     {
 
-        // Проверка наличия комнат
         if (dungeonData.roomsDictionary == null || dungeonData.roomsDictionary.Count == 0)
         {
             Debug.LogError("RoomsDictionary is empty or null!");
@@ -57,7 +55,6 @@ public class RoomContentGenerator : MonoBehaviour
         int randomRoomIndex = UnityEngine.Random.Range(0, dungeonData.roomsDictionary.Count);
         Vector3Int playerSpawnPoint = dungeonData.roomsDictionary.Keys.ElementAt(randomRoomIndex);
 
-        // Проверка валидности индекса
         if (!dungeonData.roomsDictionary.ContainsKey(playerSpawnPoint))
         {
             Debug.LogError("Invalid spawn point selected!");
@@ -109,15 +106,6 @@ public class RoomContentGenerator : MonoBehaviour
             dungeonData.roomsDictionary[farthestRoom],
             dungeonData.GetRoomFloorWithoutCorridors(farthestRoom)
         );
-
-        //// 5. Добавляем врагов и предметы как в обычных комнатах
-        //doorRoomObjects.AddRange(
-        //    defaultRoom.ProcessRoom(
-        //        farthestRoom,
-        //        dungeonData.roomsDictionary[farthestRoom],
-        //        dungeonData.GetRoomFloorWithoutCorridors(farthestRoom)
-        //    )
-        //);
 
         // 6. Регистрируем созданные объекты
         spawnedObjects.AddRange(doorRoomObjects);
