@@ -17,6 +17,8 @@ public class ObstacleAvoidanceBehaviour : SteeringBehaviour
     {
         foreach (Collider obstacleCollider in aiData.obstacles)
         {
+            if (obstacleCollider == null) continue;
+
             Vector3 directionToObstacle
                 = obstacleCollider.ClosestPoint(transform.position) - (Vector3)transform.position;
             float distanceToObstacle = directionToObstacle.magnitude;

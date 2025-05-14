@@ -47,7 +47,7 @@ MonoBehaviour:
   targetDetectionRange: 5
   obstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 640
+    m_Bits: 17024
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   detectionRadius: 2
   layerMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 17152
   showGizmos: 1
 --- !u!1 &7247030692401624104
 GameObject:
@@ -1374,6 +1374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f1c18e3b24ed6349b88c3b9f1c1fda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
-  agentColliderSize: 0.6
+  radius: 4
+  agentColliderSize: 2
   showGizmo: 1

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 197525341451967003}
   - component: {fileID: 197525341451967002}
   - component: {fileID: 197525341451967005}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 798600237496724969}
   - component: {fileID: 5591424325342473354}
   - component: {fileID: 4514566152727801959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 4108949146484226070}
   - component: {fileID: 559837463271594045}
   - component: {fileID: 8937991821563863339}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AbstractDunngeonGenerator">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\AbstractDunngeonGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIData">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAABAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\AIData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyAI">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAACAAIAAAAAAAAQgAIABAAAQAAQAggAWBAAg=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\EnemyAI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DestroyHelper">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAACAAAAAIACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\FX\DestroyHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstantiateHelper">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\FX\InstantiateHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthBarController">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABgAACAIAAAAAAAAAgAAAAAAAQAIAAAAACACCAA=</HashCode>
+      <FileName>Assets\Materials\HealthHeartSystem\Scripts\HealthBarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthBarHUDTester">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAgQA=</HashCode>
+      <FileName>Assets\Materials\HealthHeartSystem\Scripts\HealthBarHUDTester.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerStats">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="PlayerStats.OnHealthChangedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Materials\HealthHeartSystem\Scripts\PlayerStats.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gARACAAIAAAACQCABAAFAAAABABAACAAQAAAgAAAAUg=</HashCode>
+      <FileName>Assets\Materials\HealthHeartSystem\Scripts\PlayerStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphTest">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAAQAEAAAABACBAAAAgQAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\DecisionSystem\GraphTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAggAAAAAAQAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PrefabPlacer">
+    <Position X="9.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACACAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\PrefabPlacer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomContentGenerator">
+    <Position X="7.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAIBAACAABIACBABAggIAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\RoomContentGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomGenerator">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\RoomGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TilemapVisualizer">
+    <Position X="9.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAEAAEAAAAAAAAAAAAAAEAAgAgAABAAAABEAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\TilemapVisualizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteeringBehaviour">
+    <Position X="15.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\SteeringBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MapRuntimeGenerator">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MapRuntimeGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Agent">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASQAAAAAAAAAAABAAAAAQAAAAAIAAAACAAAAAACAEI=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Agent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentAnimations">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\AgentAnimations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentMover">
+    <Position X="20" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgACAAQFAAAAAAAAAAAAABQAAAAAAAAQAEA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\AgentMover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationEventHelper">
+    <Position X="18.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\AnimationEventHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KnockbackFeedback">
+    <Position X="11.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAEAAAAQAgAAAAAAAAASAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Feedback\KnockbackFeedback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Health">
+    <Position X="13" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFAAAIAAAACAAAQAAAAAQAABAMAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Health.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerInput">
+    <Position X="18.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAACAAACAAAAAAAAAAAAAAAAAAAAAAAUAAIA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\PlayerInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SFXPlayer">
+    <Position X="20" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACABQAIAAAAAAAAAQCAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\SFXPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeaponParent">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAwAAAQCCAoAAAAAAAAAiAgAAIAABAACQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\WeaponParent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeathUIScript">
+    <Position X="21.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\DeathUIScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseScript">
+    <Position X="21.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAAAEAAAAAAAEAAEAAACAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\PauseScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinDoorScript">
+    <Position X="18.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgEA=</HashCode>
+      <FileName>Assets\Scripts\UI\WinDoorScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinTrigger">
+    <Position X="20" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEQAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\WinTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleRandomWalkDungeonGenerator">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAUAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\SimpleRandomWalkDungeonGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CorridorFirstDungeonGeneration">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAACAAAAIABAQgBAAATQAhUAAIIAAAACABAAgAAAI=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\CorridorFirstDungeonGeneration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FightingPitRoom">
+    <Position X="14.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAgAAACAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\FightingPitRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerRoom">
+    <Position X="16.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAADAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\PlayerRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObstacleAvoidanceBehaviour">
+    <Position X="16.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAACEAAAAAAAAAAAAAAAAACAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\ObstacleAvoidanceBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeekBehaviour">
+    <Position X="14.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAEAAAAAAAAAAJAAAAAACAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\SeekBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="10" />
+</ClassDiagram>
