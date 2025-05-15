@@ -18,6 +18,7 @@ public class KnockbackFeedback : MonoBehaviour
         StopAllCoroutines();
         OnBegin?.Invoke();
         Vector3 direction = (transform.position - sender.transform.position).normalized;
+        rb.drag = 0.5f;
         rb.AddForce(direction * strength, ForceMode.Impulse);
         StartCoroutine(Reset());
     }

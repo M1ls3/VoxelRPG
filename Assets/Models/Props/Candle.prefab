@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1151793390184846596}
   - component: {fileID: 2854973356816296378}
   - component: {fileID: 1719192552335478067}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CandleLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812191732377971026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 156094690927706697}
   - component: {fileID: 2748407679789831843}
   - component: {fileID: 2390703817585357151}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

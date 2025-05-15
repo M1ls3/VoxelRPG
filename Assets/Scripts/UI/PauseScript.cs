@@ -5,6 +5,7 @@ using UnityEditor.Rendering.LookDev;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PauseScript : MonoBehaviour
@@ -46,6 +47,15 @@ public class PauseScript : MonoBehaviour
 
     public void ExitGame()
     {
+
         Application.Quit();
+        //try
+        //{
+        //    Debug.Log("Button to next Scene!");
+        //    SceneManager.LoadScene("Menu");
+        //}
+        //catch { Debug.Log("Exit Error"); }
+
     }
 }
+

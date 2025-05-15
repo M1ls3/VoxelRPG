@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AIData">
+    <Position X="10.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAABAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\AIData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContextSolver">
+    <Position X="14" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAAAAAAAAAAAAAAIAAAAAAAAACAKACAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\ContextSolver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Detector">
+    <Position X="16.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\Detector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyAI">
+    <Position X="12.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAACAAIAAAAAAAAQgAIABAAAQAAQAggAWBAAg=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\EnemyAI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObstacleAvoidanceBehaviour">
+    <Position X="21.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAACEAAAAAAAAAAAAAAAAACAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\ObstacleAvoidanceBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Directions">
+    <Position X="10.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\ObstacleAvoidanceBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObstacleDetector">
+    <Position X="15.75" Y="10.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAAAAAAIAAAAAAAAAAAIAAAAAAAAAAAEEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\ObstacleDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeekBehaviour">
+    <Position X="19.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAEAAAAAAAAAAJAAAAAACAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\SeekBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteeringBehaviour">
+    <Position X="20.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\SteeringBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TargetDetector">
+    <Position X="17.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAIgAAAAAAAAEAIAIAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\TargetDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="10" />
+</ClassDiagram>
