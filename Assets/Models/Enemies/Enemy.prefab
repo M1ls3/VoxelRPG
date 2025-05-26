@@ -192,7 +192,8 @@ GameObject:
   - component: {fileID: 4633449275108059498}
   - component: {fileID: 2074722129377272150}
   - component: {fileID: 7245225012983232807}
-  m_Layer: 8
+  - component: {fileID: 1176584725990652120}
+  m_Layer: 11
   m_Name: Sword14_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,6 +437,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &1176584725990652120
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439101664933477632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3961813556567730997, guid: 5e3ece6a343a3f04fa7bc7a3c7ce9e02, type: 3}
 --- !u!1 &2493915050872368987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5639479373187194612}
   - component: {fileID: 5881547453627022446}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: SphereOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
