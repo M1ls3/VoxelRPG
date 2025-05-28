@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="AbstractDunngeonGenerator">
-    <Position X="23" Y="17.25" Width="2.25" />
+    <Position X="24.25" Y="16.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAACCAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\AbstractDunngeonGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SimpleRandomWalkDungeonGenerator">
-    <Position X="22.5" Y="14.75" Width="3.25" />
+    <Position X="23.75" Y="14.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAUAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\SimpleRandomWalkDungeonGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CorridorFirstDungeonGeneration">
-    <Position X="19.5" Y="15" Width="2.75" />
+    <Position X="20.75" Y="14.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>CIAAACAAAAIABAQgBAAATQAhUAAIIAAAACABAAgAAAI=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\CorridorFirstDungeonGeneration.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GraphTest">
-    <Position X="28.25" Y="9.75" Width="1.5" />
+    <Position X="29.25" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAIAAAAQAEAAAABACBAAAAgQAAAAAAAAAgA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\DecisionSystem\GraphTest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Item">
-    <Position X="11" Y="11.25" Width="1.5" />
+    <Position X="12.25" Y="12.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAggAAAAAAQAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\Items\Item.cs</FileName>
@@ -50,35 +50,35 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RoomGenerator">
-    <Position X="18" Y="5.5" Width="1.5" />
+    <Position X="18.25" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\RoomGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TilemapVisualizer">
-    <Position X="17.5" Y="15" Width="1.75" />
+    <Position X="18.75" Y="14.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AIAAAAAEAAEAAAAAAAAAAAAAAEAAgAgAABAAAABEAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\TilemapVisualizer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MapRuntimeGenerator">
-    <Position X="15" Y="15" Width="2.25" />
+    <Position X="16.25" Y="14.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\MapRuntimeGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ItemData">
-    <Position X="11" Y="14.25" Width="1.5" />
+    <Position X="12.25" Y="15.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAIIAAAIAAAAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\Items\ItemData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ItemPlacementHelper">
-    <Position X="12.75" Y="11.25" Width="2" />
+    <Position X="14" Y="12.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAACAAgAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\Items\ItemPlacementHelper.cs</FileName>
@@ -92,7 +92,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PlacementData">
-    <Position X="24.25" Y="5" Width="1.5" />
+    <Position X="24.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\PlayerRoom.cs</FileName>
@@ -127,21 +127,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Graph">
-    <Position X="26.5" Y="9.75" Width="1.5" />
+    <Position X="27.5" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAAACABAAAAEAAAAAAAAAgA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\DecisionSystem\Graph.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SimpleRandomWalkData">
-    <Position X="19.5" Y="13" Width="2.25" />
+    <Position X="20.75" Y="12.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAgAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\Data\GenerateData\SimpleRandomWalkData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DijkstraAlgorithm">
-    <Position X="26" Y="12.75" Width="2" />
+    <Position X="27" Y="12.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\DecisionSystem\DijkstraAlgorithm.cs</FileName>
@@ -155,28 +155,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ProceduralGenerationAlgorithm">
-    <Position X="25.5" Y="17" Width="3" />
+    <Position X="26.75" Y="16.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\ProceduralGenerationAlgorithm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Direction3D">
-    <Position X="17.75" Y="18.5" Width="1.5" />
+    <Position X="19" Y="18" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\ProceduralGenerationAlgorithm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WallGenerator">
-    <Position X="26" Y="15" Width="1.5" />
+    <Position X="27.25" Y="14.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\WallGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="PlacementType">
-    <Position X="12.75" Y="13.75" Width="1.5" />
+    <Position X="14" Y="15" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Assets\Scripts\Dungeon Generation Algorithms\RoomSystem\Items\ItemPlacementHelper.cs</FileName>
